@@ -1,0 +1,2524 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>E-cart</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="center">
+        <nav>
+          <div class="bar">
+            <i class="fas fa-bars"></i>
+            <h3>shopping cart</h3>
+          </div>
+          <div class="main-list">
+            <div class="list">
+              <h3><i class="fas fa-shopping-bag"></i>shopping cart</h3>
+              <div class="search">
+                <input type="text" placeholder="Search" autocomplete="off" />
+              </div>
+              <ul>
+                <li>
+                  <div>
+                    <i class="fas fa-layer-group"></i>
+                  </div>
+                  all
+                </li>
+                <li>
+                  <div>
+                    <i class="fas fa-headphones-alt"></i>
+                  </div>
+                  speaker
+                </li>
+                <li>
+                  <div>
+                    <i class="fas fa-clock"></i>
+                  </div>
+                  watch
+                </li>
+                <li>
+                  <div>
+                    <i class="fas fa-shoe-prints"></i>
+                  </div>
+                  shoes
+                </li>
+                <li>
+                  <div>
+                    <i class="fas fa-suitcase-rolling"></i>
+                  </div>
+                  suitcase
+                </li>
+                <li>
+                  <div>
+                    <i class="fas fa-laptop"></i>
+                  </div>
+                  laptop
+                </li>
+                <li>
+                  <div>
+                    <i class="fas fa-mobile"></i>
+                  </div>
+                  mobile
+                </li>
+                <li>
+                  <div>
+                    <i class="fas fa-camera"></i>
+                  </div>
+                  camera
+                </li>
+                <li>
+                  <div>
+                    <i class="fas fa-tshirt"></i>
+                  </div>
+                  men
+                </li>
+                <li>
+                  <div>
+                    <i class="fas fa-fan"></i>
+                  </div>
+                  fan
+                </li>
+                <li>
+                  <div>
+                    <i class="fas fa-gem"></i>
+                  </div>
+                  jewellery
+                </li>
+                <li>
+                  <div>
+                    <i class="fas fa-gamepad"></i>
+                  </div>
+                  games
+                </li>
+                <li>
+                  <div>
+                    <i class="fas fa-hard-hat"></i>
+                  </div>
+                  helmet
+                </li>
+                <li>
+                  <div>
+                    <i class="fas fa-glasses"></i>
+                  </div>
+                  glass
+                </li>
+              </ul>
+            </div>
+            <div class="blur">
+              <!-- overlay -->
+            </div>
+          </div>
+        </nav>
+        <div class="searchcart">
+          <div class="toggle">
+            <button id="theme-toggle">
+              <img src="contrast.png" alt="" />
+            </button>
+          </div>
+          <div class="search">
+            <input
+              type="text"
+              name="search"
+              placeholder="Search"
+              autocomplete="off"
+            />
+          </div>
+          <div class="cart">
+            <span class="cart-icon">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </span>
+            <span id="product-count" class="count">0</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- main -->
+
+
+
+    <main>
+      <!-- all products container -->
+      <div class="products">
+        <!-- loader -->
+        <div class="loader-container">
+          <div class="loader"></div>
+        </div>
+        <!-- error msg -->
+        <div id="no-products">No products found.</div>
+        <!-- product -->
+        <div class="product" data-category="helmet">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/61V1pB-2JRL._SL1100_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>Steelbird SBH-17</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 4,999</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Ignyte IGN-4 Trever ISI / DOT Certified Double Visor Full Face
+              Helmet Outer Anti-Fog Clear Visor and Inner Smoke Sun Shield
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61V1pB-2JRL._SL1100_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61dckniKHBL._SL1100_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61I5pAydJLL._SL1100_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61I5pAydJLL._SL1100_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="mobile">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/718jcIFYaAL._SL1200_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>IQOO neo 9 pro</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 23,499</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              iQOO Neo9 Pro 5G (Fiery Red, 12GB RAM, 256GB Storage) | Snapdragon
+              8 Gen 2 Processor | Supercomputing Chip Q1 | Flagship Level Sony
+              IMX920 Camera
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/718jcIFYaAL._SL1200_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71Qvj-ww7IL._SL1200_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71jyObbkvpL._SL1200_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/719nIYVptLL._SL1200_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="glass">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/515gKnUgwpL._SX679_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>ray ban</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 10,000</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              luella Men's Glass & Steel Stylish Square Sunglasses - Black -
+              Pack of 1
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/515gKnUgwpL._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51Rhqqog6lL._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61isAuSDTzL._SX569_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51DOLqJOKwL._SX569_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="laptop">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/61cpreycK-L._SL1500_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>HP laptop</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 55,000</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              HP Pavilion 15, AMD Ryzen 7 5700U, 15.6-inch (39.6 cm), FHD, 16GB
+              DDR4, 1TB SSD, AMD Radeon Graphics, FPR, 720p HD Camera, Backlit
+              KB, Audio by B&O (Win 11, MSO 2021, Silver, 1.75 kg), eh1147AU
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61cpreycK-L._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/81-psDCByiL._SX522_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/816G2iSCHbL._SX522_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/81GV6F-haJL._SX522_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="watch">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/61KPOgaAvOL._SL1500_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>noise</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 1,200</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Noise Diva Smartwatch with Diamond Cut dial, Glossy Metallic
+              Finish, AMOLED Display, Mesh Metal and Leather Strap Options, 100+
+              Watch Faces, Female Cycle Tracker Smart Watch for Women
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61KPOgaAvOL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71qF-GF9OjL._SY450_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71sMa44P-LL._SY450_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71pGPICHApL._SY450_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="suitcase">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/514xUT1xYVL._SL1500_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>Skybags</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 999</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Safari Pentagon 55 Cms Small Cabin Polypropylene Hard Sided 4
+              Wheels 360 Degree Wheeling System Luggage/Speed_Wheel
+              Suitcase/Trolley Bag, Cyan Blue
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/514xUT1xYVL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71bTbYyAcaL._SY355_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71LZiI6nSdL._SY355_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61OeHAV26IL._SY355_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="mobile">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/71yzJoE7WlL._SL1500_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>iphone 15 pro max</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 1,50,000</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>Apple iPhone 15 Pro max (256 GB) - Blue Titanium</p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71yzJoE7WlL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61O3kh6qpvL._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71kGvmn-t8L._SX522_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71g7dxYXiOL._SX522_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="speaker">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/71wAXhzCmnS._SL1500_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>Zebronics</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 1,500</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Zebronics ZEB-COUNTY 3W Wireless Bluetooth Portable Speaker With
+              Supporting Carry Handle, USB, SD Card, AUX, FM & Call Function.
+              (Black)
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71wAXhzCmnS._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71kOPhA2K5L._SX425_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61IVaSPgA6L._SX425_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71avH9ycOvL._SX425_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="shoes">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/61JK74Bpb8L._SY675_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>Skechers</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 699</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>New balance Mens 880 Running Shoe</p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61JK74Bpb8L._SY675_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71YgWb8r3-L._SX500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71HoC5G5fvL._SY695_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/41FyYMeGy3L._SY500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="camera">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/81Tr3Jo8DvL._SL1500_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>Sony ILCE-6100Y</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 45,000</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Sony Alpha ILCE-7M4K Full-Frame Hybrid Camera 33MP
+              Interchangeable-Lens Mirrorless Camera with 28-70mm Digital Zoom
+              Lens (4K 60P Video Recording, Real-Time Eye AF for Humans, Birds,
+              Animals) - Black
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/81Tr3Jo8DvL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/81BqlcOHdwL._SX425_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/812VIwWG2DL._SX425_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71KmaWn+j9L._SX425_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="speaker">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/61WmDwYkv6L._SL1200_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>pTron</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 12,000</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              pTron Newly Launched Fusion Theatre 60W Karaoke Bluetooth Party
+              Speaker, Captivating Stereo Sound, Vivid RGB Lights, 3mtr Karaoke
+              Mic, 5 Equalisers,...
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61WmDwYkv6L._SL1200_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71Lm+-YVBLL._SX425_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/716qpTmHlgL._SX425_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71ePoMyEG5L._SX425_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="games">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/51W7DbAywkL._SL1080_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>EvoFox Elite</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 599</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Handheld Video Game Console, Retro Mini Game with 400 Classic Sup
+              Game TV , Rechargeable 8 Bit Classic – Colour and Design as per
+              Stock
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51W7DbAywkL._SL1080_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51wpCWjC1iL.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51wJMXIme5L.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51GgvcLBBnL._SY355_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- prooduct -->
+        <div class="product" data-category="suitcase">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/71CeIYFdrTL._SL1500_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>safari</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 1,300</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Kamiliant American Tourister Harrier Zing 78 Cms Large Check-in
+              (Pp) Hard Sided 8 Wheels Spinner Luggage/Suitcase/Trolley Bag
+              (Navy) (Double Wheel), Navy Blue, Medium
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71CeIYFdrTL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71lyuAGzLoL._SL1000_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51apzDzZkoL._SL1000_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61NNqUNkIcL._SL1000_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="games">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/51afJC92cgL._SL1000_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>sony pS 5</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 45,000</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>Sony PlayStation®5 Digital Edition (slim)</p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51afJC92cgL._SL1000_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/41LrbwhFnoL._SL1000_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/41nrm-+a1CL._SL1000_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/41HDNFUQbsL._SL1000_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="laptop">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/31paoJTwAdL._SY445_SX342_QL70_FMwebp_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>macbook pro</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 200,000</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Apple 2023 MacBook Pro (16-inch, M3 Max chip with 16‑core CPU and
+              40‑core GPU, 48GB Unified Memory, 1TB) - Space Black
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/31paoJTwAdL._SY445_SX342_QL70_FMwebp_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71qArNmCH8L._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/718n279cEAL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61mfMh+cEkL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="jewellery">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/71+Da7qRH0L._SY575_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>daimond</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 99,800</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Atasi International American Diamonds Alloy Necklace Set with
+              Earrings for Women | Stylish Jewellery for Party, Wedding and
+              Festive Occasions (5919)
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71+Da7qRH0L._SY575_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71CXPMMuFVL._SY500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51vBeC+tFQL._SY500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/6131EJ396ML._SY500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="games">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/61S8ET0MrYL._SL1000_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>toys</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 699</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Sky Tech® Range Rover Defender 1:32 Scale Model Car Exclusive
+              Alloy Metal Pull Back Die-cast Car Metal Pullback Toy car with
+              Openable Doors & Light...
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61S8ET0MrYL._SL1000_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61G2vZc8kEL.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51DjlOSMsgL.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61muon4KkEL._SL1000_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="shoes">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/71aFuiEntML._SY695_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>adidas</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 2,500</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>U.S. POLO ASSN. Men's Sneaker</p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71aFuiEntML._SY695_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61SuI96zREL._SY575_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/617afbGpYoL._SY500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/7138dtNsCjL._SY500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="pen">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/71htqPSXwVL._SL1500_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>cello</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 200</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Signature Cello Cello Carbon Ball Pen | Blue Ink | 1 Ball Pen |
+              Elegant Matte Black Finish | Premium Metal Pens For Office Use |
+              Stylish Gifts For Men & Women | Corporate Gifting
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71htqPSXwVL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51k4uNBdfIL._SL1000_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51b0XBicmUL._SL1000_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51BleHpMZpL._SL1000_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="fan">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/71Sh4Tra6xL._SL1500_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>haveels</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 8,000</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Havells 1200Mm Stealth Air Bldc Motor Ceiling Fan Most Silent &
+              Premium,5 stars With Rf Remote,100% Copper Upto 55% Energy
+              Saving,Timer,Memory Backup (Pack Of 1,Indigo Blue)
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71Sh4Tra6xL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71jTkB8C3ML._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/91elSKMbSVL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/81ySS-dyABL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="watch">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/61TapeOXotL._SL1500_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>fastrack</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 1,100</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Noise Twist Round dial Smart Watch with Bluetooth Calling, 1.38"
+              TFT Display, up-to 7 Days Battery, 100+ Watch Faces, IP68, Heart
+              Rate Monitor, Sleep Tracking (Jet Black)
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61TapeOXotL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61Q9zvUPn9L._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/41uSUOytOjL.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71FwUIz2oEL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="camera">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/614kzkELwmL._SL1000_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>nikon</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 35,000</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Nikon Z50 Mirrorless Camera with Z Dx 16-50Mm F/3.5-6.3 Vr & Z Dx
+              50-250Mm F/4.5-6.3 Vr Lens with Additional Battery, 20.9 MP, 64 GB
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/614kzkELwmL._SL1000_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71RSbTNH9FL._SL1000_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61fyZ27fneL._SL1000_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61fv+s7jjkL._SL1000_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="watch">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/61WkDUtq5aL._SX679_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>TIMEX Analog</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 1,899</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Titan Urban Magic Blue Dial Multial Stainless Steel Strap Analog
+              Watch for Men-NS90102QM01
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61WkDUtq5aL._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71rTtyYiWkL._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61dJI1gOAjL._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61chBYGRk8L._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="fan">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/61IFBHkFD8L._SL1500_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>crompton</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 2,700</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Havells 1200Mm Ambrose Bldc Motor Ceiling Fan|Premium Matt Finish,
+              Decorative Fan, Remote Control, High Air Delivery|5 Stars Rated,
+              Upto 60% Energy Saving,...
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61IFBHkFD8L._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/81uUGM0gXZL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71Tc6bTGvdL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/81YiZ4mvh0L._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="watch">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/81CdgFy3LsL._SL1500_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>apple watch</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 79,999</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Apple Watch SE (2nd Gen, 2023) [GPS 40mm] Smartwatch with Silver
+              Aluminum Case with Winter Blue Sport Loop One Size. Fitness &
+              Sleep Tracker, Crash...
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/81CdgFy3LsL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/713vsUbfi7L._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71LFs6FLcEL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71TNWr-GdyL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="mobile">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/81vxWpPpgNL._SL1500_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>galaxy s24 ultra</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 1,50,000</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Samsung Galaxy S24 Ultra 5G AI Smartphone (Titanium Yellow, 12GB,
+              256GB Storage)
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/81vxWpPpgNL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71JLhofuYJL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71vdd0pLCiL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71E-ptCgHcL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="jewellery">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/71WEDh64jhL._SY695_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>silver necklace</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 700</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Atasi International White Stones/AD Diamond Necklace with Earrings
+              - Jewellery Set for Women, Girls Best Suits for Party, Wedding and
+              Festive Occasions
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71WEDh64jhL._SY695_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/81bn48k5sTL._SY535_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/714zyfArM2L._SY535_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71ygzBFwd1L._SY535_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="laptop">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/51PLKwik5fL._SL1080_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>Dell Alienware</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 300,000</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Dell Alienware X16 R1 Gaming, Intel Core i9-13900HK/32GB/1TB
+              SSD/NVIDIA RTX 4080 12GB GDDR6/16.0" (40.64Cms) QHD
+              240Hz/Alienware Cherry MX/Win 11+MSO'21/15 Month McAfee/Lunar
+              Silver/2.72Kgs
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51PLKwik5fL._SL1080_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61fdEOmfdjL._SL1080_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61p8N-FdmTL._SL1080_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51znDjYrmZL._SL1080_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="shoes">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/61km43b-q5L._SY675_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>nike</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 7,000</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              ASIAN Men's Wonder Sports Running,Walking & Gym Shoes with Casual
+              Sneaker Lightweight Lace-Up Shoes for Men's Delta-20
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61km43b-q5L._SY675_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71stGo43k-L._SY695_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51qMJiNZ2lL._SY625_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/614SlhGGJ7L._SY625_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="helmet">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/71EUG9d3nwL._SL1500_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>Studds Ninja Elite</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 4,499</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              Steelbird SBA-20 Draco Bluetooth ISI Certified Full Face Helmet
+              for Men and Women with Inner Smoke Sun Shield
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71EUG9d3nwL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/91J++8wN-RL._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/81KEvGjwY5L._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/814nE3Bbo+L._SL1500_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="men">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/51NSfroIvbL._SX522_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>Raymond</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 8,500</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>Van Heusen Men's Regular Fit T-Shirt</p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51NSfroIvbL._SX522_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61I9HHwrLsL._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51lhKHkB2SL._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51889N5ZeQL._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="glass">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/6166AYb6PwL._SX679_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>Tom Ford</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 20,000</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              SUNGAIT UV protection Ultra Lightweight Rectangular Polarized
+              Sunglasses
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/6166AYb6PwL._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61wXZqLuuoL._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71mrx2oBB8L._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71iipfOrmwL._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="camera">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/610A-jBM4hL._SL1426_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>canon</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 2,100</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              AUSHA® 5K Action Camera with Interchangeable 6 Lens Filters, EIS
+              Stabilisation Antishake, 40M Waterproof, WiFi Support, HD Out, 170
+              Degree WDR, Dual Screen
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/610A-jBM4hL._SL1426_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/714d1mE+UXL._SL1000_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/51NytcSMxzL.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61bPG1G4XOL._SL1007_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="men">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/61mkNrOCZtL._SX679_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>Levi's</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 3,499</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>Van Heusen Men's Regular Fit T-Shirt</p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61mkNrOCZtL._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61X-M+L6iQL._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/518eBWq4BXL._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61JO-6RUWWL._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- product -->
+        <div class="product" data-category="glass">
+          <div class="image">
+            <img
+              src="https://m.media-amazon.com/images/I/61CPmeNHG4L._SX679_.jpg"
+              alt=""
+              loading="lazy"
+            />
+          </div>
+          <div class="product-title">
+            <h2>RAEN</h2>
+          </div>
+          <div class="product-price-rating">
+            <div class="ratings">
+              <span data-value="1" class="star">&#9733;</span>
+              <span data-value="2" class="star">&#9733;</span>
+              <span data-value="3" class="star">&#9733;</span>
+              <span data-value="4" class="star">&#9733;</span>
+              <span data-value="5" class="star">&#9733;</span>
+            </div>
+            <div class="price">₹ 499</div>
+          </div>
+          <div class="add">
+            <button>add <i class="fa-solid fa-cart-shopping"></i></button>
+          </div>
+
+          <div class="productdetails">
+            <p>
+              SUNGAIT HD Polarized Sunglasses for Men Driving Cycling Running
+              Metal UV400 Sports Goggles
+            </p>
+            <div class="productimages">
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/61CPmeNHG4L._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/81Ak0sbY3SL._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71U9AKSgo9L._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="sampleimage">
+                <img
+                  src="https://m.media-amazon.com/images/I/71MQVelCv-L._SX679_.jpg"
+                  alt=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- main-cart  -->
+      <div class="main-cartcontainer">
+        <div class="cart-blur">
+          <!-- overlay -->
+        </div>
+        <div class="cart-container">
+          <div class="cart-title">
+            <div class="title">
+              <i class="fas fa-shopping-cart"></i>
+              <h4>Cart Items</h4>
+            </div>
+            <div class="close-cart">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          <div class="loader-container2">
+            <span>Clearing</span>
+            <div class="loader2"></div>
+          </div>
+          <div class="emptymsg">
+            <img src="cart.png" alt="Empty Cart" width="120" />
+          </div>
+          <div class="cart-products">
+            <!-- Dynamically added products -->
+          </div>
+          <div class="cart-total">
+            <h4>Total Amount : <span class="total-amount">₹ 0</span></h4>
+          </div>
+          <div class="clear">
+            <button class="gradient-delete-button">
+              <i class="fas fa-trash-alt trash-icon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- product details -->
+      <div class="expand-container">
+        <div class="expand-productdetails">
+          <div class="close-expand">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <hr />
+          <div class="expand-img-container">
+            <div class="expand-image">
+              <!-- dynamically image will load -->
+              <img src="" alt="" />
+            </div>
+            <div class="expand-imgdetails">
+              <!-- dynamically paragrapgh will change -->
+              <p></p>
+              <div class="sampleimgs">
+                <!-- images will dynamically -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h4>About Us</h4>
+          <p class="about-us">
+            We are dedicated to providing the best products at affordable
+            prices. Our mission is to deliver quality and customer satisfaction.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Customer Support</h4>
+          <ul>
+            <li><a href="#">Shipping & Delivery</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact Us</h4>
+          <address>
+            <p>Email :deepanoffl18@example.com</p>
+            <p>Phone :+91 7010091803</p>
+            <p>Address :66, Soundara Pandian street, Kovilpatti</p>
+          </address>
+        </div>
+        <div class="footer-section">
+          <h4>Follow Us</h4>
+          <div class="social-media">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
